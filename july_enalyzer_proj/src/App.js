@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { MainPage } from "./components/homepage/MainPage";
+import { MainPage } from "./components/Homepage/MainPage";
 import { DistibutionComp } from "./components/distribution/DistributionComp";
 
 function App() {
