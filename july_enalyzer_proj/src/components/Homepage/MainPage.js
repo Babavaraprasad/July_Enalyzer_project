@@ -6,19 +6,21 @@ import { KeypadBackButton} from "./KeypadBackButton";
 
 export const MainPage = () => {
   const navMoneyPage = useNavigate();
-  const [amount, setAmount] = useState("");
+  const [amount, setAmount] = useState("£ ");
   const keypadValue = [...new Array(9)];
-
-
   
+ const onInputChange=(e)=>{
+  setAmount(e.target.value);
+ }
   const onKeypadElementClick = (e) => {
     setAmount(`${amount}${e}`);
   };
   
-  
-  
   const keypadBackButtonHandler = () => {
-    const newamount = amount.slice(0, -1);
+    let newamount = amount.slice(0, -1);
+    if(!newamount) {
+      newamount = "£ "
+    }
     setAmount(newamount);
   };
 
@@ -29,18 +31,17 @@ export const MainPage = () => {
 
   return (
     <>
-      <p className="select-amount">Select amount</p>
+      <p className="title">Select amount</p>
       <input
         className="input-text"
         type="text"
-        defaultValue={`£ ${amount}`}
-        //onChange={onInputChange}
+        defaultValue={`${amount}`}
+        onChange={onInputChange}
         key={amount}
-
         autoFocus={true}
       />
-      <section className="Keypad-container">
-        {keypadValue.map((k, i) => (
+      <section className="keypad-container">
+        {keypadValue.map((_, i) => (
           <Keypad
             key={i}
             keypadcontent={i + 1}
@@ -49,14 +50,40 @@ export const MainPage = () => {
         ))}
         <KeypadBackButton onClickHandler={keypadBackButtonHandler} />
         <Keypad keypadcontent={"0"} onClickHandler={onKeypadElementClick} />
-        
-        <button
-          className={`btn-submit ${amount ? "" : "disabled"}`}
+      </section>
+      <button
+          className={`btn-submit ${amount.substring(2) ? "" : "disabled"}`}
           onClick={submitbuttonHandler}
         >
-          submit
+          submit 
         </button>
-      </section>
     </>
   );
 };
+
+/*
+function generateMoney(amount) {
+  const denominations = [
+    { name: "notes", values: [1000, 500, 200, 100] },
+    { name: "bigCoins", values: [50, 30, 20] },
+    { name: "smallCoins", values: [10, 5, 3, 2, 1] }
+  ];
+
+  const result = {};
+
+  for (let denomination of denominations) {
+    const { name, values } = denomination;
+    result[name] = {};
+
+    for (let value of values) {
+      if (amount >= value) {
+        const count = Math.floor(amount / value);
+        result[name][value] = count;
+        amount -= count * value;
+      }
+    }
+  }
+
+  return result;
+}
+*/
