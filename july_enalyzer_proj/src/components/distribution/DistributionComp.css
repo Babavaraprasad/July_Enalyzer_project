@@ -1,52 +1,54 @@
-.render-money-container{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 90%;
-    flex-wrap: wrap;
-    margin: 0 auto;
+.render-money-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
-.header-amount{
-    color: snow;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    font-style: bold;
-    text-align: center;
+.header-amount {
+  color: snow;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  font-style: bold;
+  text-align: center;
 }
-.thanking-message{
-    color: snow;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    font-style: bold;
-    text-align: center;
+.thanking-message {
+  color: snow;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  font-style: bold;
+  text-align: center;
 }
-.note,.bigCoin,.smallCoin{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-around;
+.note,
+.bigCoin,
+.smallCoin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .btn-back-homepage {
-    position: absolute;
-    top:50px;
-    left: 20px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    margin-left: 30px;
-    align-items: center;
-    justify-content: center;
-    color: snow;
-    background-color: transparent;
-    border: 2px solid snow;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  justify-content: center;
+  color: snow;
+  background-color: transparent;
+  border: 2px solid snow;
 }
 .btn-back-homepage:hover {
-   background-color:teal;
-   opacity: 1;
-   transition: all 1s ease-in;
+  background-color: teal;
+  opacity: 1;
+  transition: all 1s ease-in;
 }
