@@ -33,18 +33,18 @@ export const DistibutionComp = () => {
             {notesAndCoins && (
                 <section className="render-money-container">
                     <div className="note">
-                        {Object.entries(notesAndCoins.notes).map(([amount, count], i) => (
-                            <NotesAndCoins imageUrl={pictureofnotes} noteAmount={amount} numberOfNotes={count} key={`notes${i}`}/>
+                        {Object.entries(notesAndCoins.notes).map(([amount, count]) => (
+                            <NotesAndCoins imageUrl={pictureofnotes} noteAmount={amount} numberOfNotes={count}/>
                         ))}
                     </div>
                     <div className="bigCoin">
-                        {Object.entries(notesAndCoins.bigCoins).map(([amount, count], i) => (
-                            <NotesAndCoins noteAmount={amount} numberOfNotes={count} key={`notes${i}`}/>
+                        {Object.entries(notesAndCoins.bigCoins).map(([amount, count]) => (
+                            <NotesAndCoins noteAmount={amount} numberOfNotes={count}/>
                         ))}
                     </div>
                     <div className="smallCoin">
-                        {Object.entries(notesAndCoins.smallCoins).map(([amount, count], i) => (
-                            <NotesAndCoins noteAmount={amount} numberOfNotes={count} key={`notes${i}`}/>
+                        {Object.entries(notesAndCoins.smallCoins).map(([amount, count]) => (
+                            <NotesAndCoins noteAmount={amount} numberOfNotes={count}/>
                         ))}
                     </div>
                 </section> 

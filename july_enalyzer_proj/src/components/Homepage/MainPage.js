@@ -44,12 +44,12 @@ export const MainPage = () => {
         {keypadValue.map((_, i) => (
           <Keypad
             key={i}
-            keypadcontent={i + 1}
+            keypadContent={i + 1}
             onClickHandler={onKeypadElementClick}
           />
         ))}
         <KeypadBackButton onClickHandler={keypadBackButtonHandler} />
-        <Keypad keypadcontent={"0"} onClickHandler={onKeypadElementClick} />
+        <Keypad keypadContent={"0"} onClickHandler={onKeypadElementClick} />
       </section>
       <button
           className={`btn-submit ${amount.substring(2) ? "" : "disabled"}`}
@@ -60,30 +60,3 @@ export const MainPage = () => {
     </>
   );
 };
-
-/*
-function generateMoney(amount) {
-  const denominations = [
-    { name: "notes", values: [1000, 500, 200, 100] },
-    { name: "bigCoins", values: [50, 30, 20] },
-    { name: "smallCoins", values: [10, 5, 3, 2, 1] }
-  ];
-
-  const result = {};
-
-  for (let denomination of denominations) {
-    const { name, values } = denomination;
-    result[name] = {};
-
-    for (let value of values) {
-      if (amount >= value) {
-        const count = Math.floor(amount / value);
-        result[name][value] = count;
-        amount -= count * value;
-      }
-    }
-  }
-
-  return result;
-}
-*/
