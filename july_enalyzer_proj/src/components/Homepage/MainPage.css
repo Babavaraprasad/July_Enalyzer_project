@@ -1,0 +1,48 @@
+.select-amount {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px/80px;
+  font-style: Bold;
+  text-align: center;
+  font-weight: 700;
+  padding: 30px;
+}
+.input-text {
+  width: 150px;
+  outline: none;
+  height: 50px;
+  border: none;
+  text-align: center;
+  color: snow;
+  font-size: 40px;
+  font-weight: bold;
+  background: transparent;
+  display: block;
+  margin: auto;
+}
+.Keypad-container {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  align-content: center;
+}
+.btn-submit {
+  width: 140px;
+  height: 40px;
+  color: snow;
+  background-color: transparent;
+  margin: 25px 0px 0px 25px;
+  border: 1px solid snow;
+  border-radius: 20px;
+  cursor: pointer;
+  justify-content: center;
+}
+.btn-submit:hover {
+  background-color: snow;
+  color: #2bbed3;
+}
+.disabled{
+	color:rgb(83, 164, 179);
+	pointer-events: none;
+}
