@@ -31,7 +31,7 @@
 }
 .btn-back-homepage {
     position: absolute;
-    top:20px;
+    top:50px;
     left: 20px;
     height: 50px;
     width: 50px;
@@ -47,4 +47,6 @@
 }
 .btn-back-homepage:hover {
    background-color:teal;
+   opacity: 1;
+   transition: all 1s ease-in;
 }
