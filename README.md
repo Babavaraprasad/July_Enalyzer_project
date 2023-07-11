@@ -4,6 +4,7 @@
 - clone the github repository using command "git clone repoPath" into local folder
 - install node module dependencies using command "npm install"
 - install a react router dependency using command "npm install react-router-dom". This is used for navigation among components with React Hooks.
+- start the development server using the command "npm start".Local host runs on the port:3000
 
 ## Architectural pattern chosen
 - single Layered architecture: Includes only the presentation or view layer currently. However, In future while integrating with backend service can be transformed to Two-layered architecture. 
@@ -18,5 +19,11 @@ KeypadBackButton: to remove the last user entered input
 DistributionComp: It renders NotesandCoins component with iterative rendering concept.
 
 ## Testing (JEST)
-- To ensure notes and coins are distributed correctly, wrote 2 unit test cases in "Distribution.test.js" file.
+- To ensure notes and coins are distributed correctly, I wrote 2 unit test cases in "Distribution.test.js" file.
   To test this scenarios, please use command "npm run test" and modify the input value to the function.
+
+## Build
+-  use "npm run build" to create a build package to deploy for the environment on cloud
+- I had deployed the build package to netlify.
+Link to netlify: https://baba-enalyzer-atm.netlify.app/
+ 
