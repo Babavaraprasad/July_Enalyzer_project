@@ -11,7 +11,10 @@ export const DistibutionComp = () => {
     const navigatetoMainpage= useNavigate();
     const [notesAndCoins, setNotesAndCoins] = useState(null);
     const money= useLocation();
-    const value = money.state.amount.substring(2);;
+    const value = money.state.amount.substring(2);
+
+    //console.log("Checkvalue:",value);
+
      const navMainpage=((e)=>{
         navigatetoMainpage("/");
     })
