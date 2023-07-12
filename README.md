@@ -25,5 +25,5 @@ DistributionComp: It renders NotesandCoins component with iterative rendering co
 ## Build
 -  use "npm run build" to create a build package to deploy for the environment on cloud
 - I had deployed the build package to netlify.
-Link to netlify: https://baba-enalyzer-atm.netlify.app/
+Link to netlify: https://enalyzer-atm-baba.netlify.app/
  
