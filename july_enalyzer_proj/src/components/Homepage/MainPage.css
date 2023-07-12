@@ -32,7 +32,7 @@
   background-color: snow;
   color: #2bbed3;
   opacity: 1;
-  transition: all 1s ease-in;
+  transition: all 200ms ease-in;
 }
 .disabled {
 	color:rgb(83, 164, 179);

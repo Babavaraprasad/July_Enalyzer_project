@@ -50,5 +50,9 @@
 .btn-back-homepage:hover {
   background-color: teal;
   opacity: 1;
-  transition: all 1s ease-in;
+  transition: all 200ms ease-in;
+}
+@media screen and (max-width: 700px) {
+  .btn-back-homepage {top: 20px; left: 0px; margin-left: 20px;}
+  .render-money-container {align-items: center; justify-content: center;}
 }
