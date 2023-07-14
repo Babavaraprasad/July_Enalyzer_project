@@ -22,6 +22,9 @@ DistributionComp: It renders NotesandCoins component with iterative rendering co
 - To ensure notes and coins are distributed correctly, I wrote 2 unit test cases in "Distribution.test.js" file.
   To test this scenarios, please use command "npm run test" and modify the input value to the function.
 
+## Running time complexity (O(n²))
+- The overall running time of this program in the worst case will be Quadratic represented with O(n²)
+
 ## Build
 -  use "npm run build" to create a build package to deploy for the environment on cloud
 - I had deployed the build package to netlify.
